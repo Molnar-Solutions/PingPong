@@ -1,9 +1,11 @@
 # ninja log v6
-15	467	7544262823383048	CMakeFiles/CMakeProject1.dir/src/math/StandardMath.cpp.obj	c70629bc0f623335
-17	502	7545313915639301	CMakeFiles/CMakeProject1.dir/Engine.cpp.obj	97065ad67c8379f0
-502	619	7545313920496864	CMakeProject1.exe	54a0f431de3d5536
-32	42	7544262823044291	clean	8c45b54705a541e8
-13	792	7548788350595423	CMakeFiles/CMakeProject1.dir/Engine.cpp.obj	97065ad67c8379f0
-793	985	7548788358392631	CMakeProject1.exe	54a0f431de3d5536
-15	461	7548788840568343	CMakeFiles/CMakeProject1.dir/Engine.cpp.obj	97065ad67c8379f0
-462	579	7548788845037472	CMakeProject1.exe	54a0f431de3d5536
+10	303	7550314056482933	CMakeFiles/PingPongGame.dir/src/math/StandardMath.cpp.obj	335fd5e313fb3a74
+12	224	7550314320558427	CMakeFiles/PingPongGame.dir/library/Include/glad/glad.c.obj	d8cc39d328a4dd51
+9	303	7550314320528413	CMakeFiles/PingPongGame.dir/src/window/window.cpp.obj	30ebcdbfc935e723
+5	334	7550314320488629	CMakeFiles/PingPongGame.dir/src/main.cpp.obj	d323df2ceec0d542
+335	590	7550314323786199	D:/Organizations/Molnar-Solutions/PingPongGame/out/PingPongGame.exe	8c7c18c9781fee13
+17	341	7550314550166635	CMakeFiles/PingPongGame.dir/src/main.cpp.obj	d323df2ceec0d542
+342	465	7550314553416623	D:/Organizations/Molnar-Solutions/PingPongGame/out/PingPongGame.exe	8c7c18c9781fee13
+24	317	7550315760977969	CMakeFiles/PingPongGame.dir/src/window/window.cpp.obj	30ebcdbfc935e723
+19	336	7550315760937963	CMakeFiles/PingPongGame.dir/src/main.cpp.obj	d323df2ceec0d542
+337	463	7550315764115180	D:/Organizations/Molnar-Solutions/PingPongGame/out/PingPongGame.exe	8c7c18c9781fee13

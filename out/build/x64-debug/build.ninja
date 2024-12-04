@@ -39,58 +39,78 @@ include CMakeFiles\rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = D$:\Organizations\Molnar-Solutions\PingPongGame\out\build\x64-debug\
+cmake_ninja_workdir = D$:\Organizations\Molnar-Solutions\PingPongGame\out\build\x64-Debug\
 # =============================================================================
-# Object build statements for EXECUTABLE target CMakeProject1
+# Object build statements for EXECUTABLE target PingPongGame
 
 
 #############################################
-# Order-only phony target for CMakeProject1
+# Order-only phony target for PingPongGame
 
-build cmake_object_order_depends_target_CMakeProject1: phony || .
+build cmake_object_order_depends_target_PingPongGame: phony || .
 
-build CMakeFiles\CMakeProject1.dir\Engine.cpp.obj: CXX_COMPILER__CMakeProject1_unscanned_Debug D$:\Organizations\Molnar-Solutions\PingPongGame\Engine.cpp || cmake_object_order_depends_target_CMakeProject1
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++20 -ZI
-  INCLUDES = -ID:\Organizations\Molnar-Solutions\PingPongGame\src
-  OBJECT_DIR = CMakeFiles\CMakeProject1.dir
-  OBJECT_FILE_DIR = CMakeFiles\CMakeProject1.dir
-  TARGET_COMPILE_PDB = CMakeFiles\CMakeProject1.dir\
-  TARGET_PDB = CMakeProject1.pdb
+build CMakeFiles\PingPongGame.dir\src\main.cpp.obj: CXX_COMPILER__PingPongGame_unscanned_Debug D$:\Organizations\Molnar-Solutions\PingPongGame\src\main.cpp || cmake_object_order_depends_target_PingPongGame
+  DEFINES = -DGLAD_GL_IMPLEMENTATION
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17
+  INCLUDES = -ID:\Organizations\Molnar-Solutions\PingPongGame\library\Include\glad -ID:\Organizations\Molnar-Solutions\PingPongGame\library\Include\GLFW -ID:\Organizations\Molnar-Solutions\PingPongGame\library\Include\glm -ID:\Organizations\Molnar-Solutions\PingPongGame\library\Include\KHR -ID:\Organizations\Molnar-Solutions\PingPongGame\library\Include\stb -ID:\Organizations\Molnar-Solutions\PingPongGame\src
+  OBJECT_DIR = CMakeFiles\PingPongGame.dir
+  OBJECT_FILE_DIR = CMakeFiles\PingPongGame.dir\src
+  TARGET_COMPILE_PDB = CMakeFiles\PingPongGame.dir\
+  TARGET_PDB = D:\Organizations\Molnar-Solutions\PingPongGame\out\PingPongGame.pdb
 
-build CMakeFiles\CMakeProject1.dir\src\math\StandardMath.cpp.obj: CXX_COMPILER__CMakeProject1_unscanned_Debug D$:\Organizations\Molnar-Solutions\PingPongGame\src\math\StandardMath.cpp || cmake_object_order_depends_target_CMakeProject1
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++20 -ZI
-  INCLUDES = -ID:\Organizations\Molnar-Solutions\PingPongGame\src
-  OBJECT_DIR = CMakeFiles\CMakeProject1.dir
-  OBJECT_FILE_DIR = CMakeFiles\CMakeProject1.dir\src\math
-  TARGET_COMPILE_PDB = CMakeFiles\CMakeProject1.dir\
-  TARGET_PDB = CMakeProject1.pdb
+build CMakeFiles\PingPongGame.dir\src\math\StandardMath.cpp.obj: CXX_COMPILER__PingPongGame_unscanned_Debug D$:\Organizations\Molnar-Solutions\PingPongGame\src\math\StandardMath.cpp || cmake_object_order_depends_target_PingPongGame
+  DEFINES = -DGLAD_GL_IMPLEMENTATION
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17
+  INCLUDES = -ID:\Organizations\Molnar-Solutions\PingPongGame\library\Include\glad -ID:\Organizations\Molnar-Solutions\PingPongGame\library\Include\GLFW -ID:\Organizations\Molnar-Solutions\PingPongGame\library\Include\glm -ID:\Organizations\Molnar-Solutions\PingPongGame\library\Include\KHR -ID:\Organizations\Molnar-Solutions\PingPongGame\library\Include\stb -ID:\Organizations\Molnar-Solutions\PingPongGame\src
+  OBJECT_DIR = CMakeFiles\PingPongGame.dir
+  OBJECT_FILE_DIR = CMakeFiles\PingPongGame.dir\src\math
+  TARGET_COMPILE_PDB = CMakeFiles\PingPongGame.dir\
+  TARGET_PDB = D:\Organizations\Molnar-Solutions\PingPongGame\out\PingPongGame.pdb
+
+build CMakeFiles\PingPongGame.dir\src\window\window.cpp.obj: CXX_COMPILER__PingPongGame_unscanned_Debug D$:\Organizations\Molnar-Solutions\PingPongGame\src\window\window.cpp || cmake_object_order_depends_target_PingPongGame
+  DEFINES = -DGLAD_GL_IMPLEMENTATION
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17
+  INCLUDES = -ID:\Organizations\Molnar-Solutions\PingPongGame\library\Include\glad -ID:\Organizations\Molnar-Solutions\PingPongGame\library\Include\GLFW -ID:\Organizations\Molnar-Solutions\PingPongGame\library\Include\glm -ID:\Organizations\Molnar-Solutions\PingPongGame\library\Include\KHR -ID:\Organizations\Molnar-Solutions\PingPongGame\library\Include\stb -ID:\Organizations\Molnar-Solutions\PingPongGame\src
+  OBJECT_DIR = CMakeFiles\PingPongGame.dir
+  OBJECT_FILE_DIR = CMakeFiles\PingPongGame.dir\src\window
+  TARGET_COMPILE_PDB = CMakeFiles\PingPongGame.dir\
+  TARGET_PDB = D:\Organizations\Molnar-Solutions\PingPongGame\out\PingPongGame.pdb
+
+build CMakeFiles\PingPongGame.dir\library\Include\glad\glad.c.obj: C_COMPILER__PingPongGame_unscanned_Debug D$:\Organizations\Molnar-Solutions\PingPongGame\library\Include\glad\glad.c || cmake_object_order_depends_target_PingPongGame
+  DEFINES = -DGLAD_GL_IMPLEMENTATION
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1
+  INCLUDES = -ID:\Organizations\Molnar-Solutions\PingPongGame\library\Include\glad -ID:\Organizations\Molnar-Solutions\PingPongGame\library\Include\GLFW -ID:\Organizations\Molnar-Solutions\PingPongGame\library\Include\glm -ID:\Organizations\Molnar-Solutions\PingPongGame\library\Include\KHR -ID:\Organizations\Molnar-Solutions\PingPongGame\library\Include\stb -ID:\Organizations\Molnar-Solutions\PingPongGame\src
+  OBJECT_DIR = CMakeFiles\PingPongGame.dir
+  OBJECT_FILE_DIR = CMakeFiles\PingPongGame.dir\library\Include\glad
+  TARGET_COMPILE_PDB = CMakeFiles\PingPongGame.dir\
+  TARGET_PDB = D:\Organizations\Molnar-Solutions\PingPongGame\out\PingPongGame.pdb
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target CMakeProject1
+# Link build statements for EXECUTABLE target PingPongGame
 
 
 #############################################
-# Link the executable CMakeProject1.exe
+# Link the executable D:\Organizations\Molnar-Solutions\PingPongGame\out\PingPongGame.exe
 
-build CMakeProject1.exe: CXX_EXECUTABLE_LINKER__CMakeProject1_Debug CMakeFiles\CMakeProject1.dir\Engine.cpp.obj CMakeFiles\CMakeProject1.dir\src\math\StandardMath.cpp.obj
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -ZI
+build D$:\Organizations\Molnar-Solutions\PingPongGame\out\PingPongGame.exe: CXX_EXECUTABLE_LINKER__PingPongGame_Debug CMakeFiles\PingPongGame.dir\src\main.cpp.obj CMakeFiles\PingPongGame.dir\src\math\StandardMath.cpp.obj CMakeFiles\PingPongGame.dir\src\window\window.cpp.obj CMakeFiles\PingPongGame.dir\library\Include\glad\glad.c.obj | D$:\Organizations\Molnar-Solutions\PingPongGame\library\Lib\glfw3.lib
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
-  LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
-  OBJECT_DIR = CMakeFiles\CMakeProject1.dir
+  LINK_LIBRARIES = D:\Organizations\Molnar-Solutions\PingPongGame\library\Lib\glfw3.lib  opengl32.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = CMakeFiles\PingPongGame.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\CMakeProject1.dir\
-  TARGET_FILE = CMakeProject1.exe
-  TARGET_IMPLIB = CMakeProject1.lib
-  TARGET_PDB = CMakeProject1.pdb
+  TARGET_COMPILE_PDB = CMakeFiles\PingPongGame.dir\
+  TARGET_FILE = D:\Organizations\Molnar-Solutions\PingPongGame\out\PingPongGame.exe
+  TARGET_IMPLIB = PingPongGame.lib
+  TARGET_PDB = D:\Organizations\Molnar-Solutions\PingPongGame\out\PingPongGame.pdb
 
 
 #############################################
 # Utility command for edit_cache
 
 build CMakeFiles\edit_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\Organizations\Molnar-Solutions\PingPongGame\out\build\x64-debug && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\Organizations\Molnar-Solutions\PingPongGame\out\build\x64-Debug && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -101,7 +121,7 @@ build edit_cache: phony CMakeFiles\edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\Organizations\Molnar-Solutions\PingPongGame\out\build\x64-debug && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SD:\Organizations\Molnar-Solutions\PingPongGame -BD:\Organizations\Molnar-Solutions\PingPongGame\out\build\x64-debug"
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\Organizations\Molnar-Solutions\PingPongGame\out\build\x64-Debug && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SD:\Organizations\Molnar-Solutions\PingPongGame -BD:\Organizations\Molnar-Solutions\PingPongGame\out\build\x64-Debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -111,7 +131,9 @@ build rebuild_cache: phony CMakeFiles\rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
-build CMakeProject1: phony CMakeProject1.exe
+build PingPongGame: phony D$:\Organizations\Molnar-Solutions\PingPongGame\out\PingPongGame.exe
+
+build PingPongGame.exe: phony D$:\Organizations\Molnar-Solutions\PingPongGame\out\PingPongGame.exe
 
 # =============================================================================
 # Folder targets.
@@ -119,9 +141,9 @@ build CMakeProject1: phony CMakeProject1.exe
 # =============================================================================
 
 #############################################
-# Folder: D:/Organizations/Molnar-Solutions/PingPongGame/out/build/x64-debug
+# Folder: D:/Organizations/Molnar-Solutions/PingPongGame/out/build/x64-Debug
 
-build all: phony CMakeProject1.exe
+build all: phony D$:\Organizations\Molnar-Solutions\PingPongGame\out\PingPongGame.exe
 
 # =============================================================================
 # Built-in targets

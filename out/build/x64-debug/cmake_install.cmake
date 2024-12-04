@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "D:/Organizations/Molnar-Solutions/PingPongGame/out/build/x64-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "D:/Organizations/Molnar-Solutions/PingPongGame/out/build/x64-Debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
