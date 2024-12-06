@@ -3,34 +3,34 @@ cmake_minimum_required(VERSION 3.10)
 
 # Project name and version
 project(PingPongGame VERSION 1.0)
-
-# Set the C++ standard
-set(CMAKE_CXX_STANDARD 17)
+ 
+# Set the C++ standard 
+set(CMAKE_CXX_STANDARD 17)   
 set(CMAKE_CXX_STANDARD_REQUIRED True)
-
-# Add include directories for third-party libraries
+ 
+# Add include directories for third-party libraries  
 include_directories(
-    ${CMAKE_SOURCE_DIR}/library/Include/glad        # Glad headers
+    ${CMAKE_SOURCE_DIR}/library/Include/glad        # Glad headers 
     ${CMAKE_SOURCE_DIR}/library/Include/GLFW        # GLFW headers
     ${CMAKE_SOURCE_DIR}/library/Include/glm         # glm headers
     ${CMAKE_SOURCE_DIR}/library/Include/KHR         # KHR headers
     ${CMAKE_SOURCE_DIR}/library/Include/stb         # stb headers
     ${CMAKE_SOURCE_DIR}/src                        # Project source code
 )
- 
+   
 # Add all source files from the `src` directory
-file(GLOB SOURCES
+file(GLOB SOURCES 
     ${CMAKE_SOURCE_DIR}/src/*.cpp
     ${CMAKE_SOURCE_DIR}/src/*/*.cpp  # Includes subdirectories in src
 )
 
 # Add glad.c to the sources, which compiles the OpenGL loader
 list(APPEND SOURCES ${CMAKE_SOURCE_DIR}/library/Include/glad/glad.c)
-   
+
 # Create the executable from the main source files and glad source
-add_executable(PingPongGame ${SOURCES})   
+add_executable(PingPongGame ${SOURCES}) # "src/headers/VAO.h" "src/headers/VBO.h" "src/headers/Texture.h" "src/headers/EBO.h" "src/headers/ShaderClass.h" "src/rendering/VAO.cpp"   
  
-# Link GLFW and other third-party libraries to the executable
+# Link GLFW and other third-party libraries to the executable 
 target_link_libraries(PingPongGame 
     ${CMAKE_SOURCE_DIR}/library/Lib/glfw3.lib  # Linking glfw3 library
     opengl32  # Linking OpenGL library (for Windows)

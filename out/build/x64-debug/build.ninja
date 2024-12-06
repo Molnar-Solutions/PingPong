@@ -67,6 +67,60 @@ build CMakeFiles\PingPongGame.dir\src\math\StandardMath.cpp.obj: CXX_COMPILER__P
   TARGET_COMPILE_PDB = CMakeFiles\PingPongGame.dir\
   TARGET_PDB = D:\Organizations\Molnar-Solutions\PingPongGame\out\PingPongGame.pdb
 
+build CMakeFiles\PingPongGame.dir\src\rendering\EBO.cpp.obj: CXX_COMPILER__PingPongGame_unscanned_Debug D$:\Organizations\Molnar-Solutions\PingPongGame\src\rendering\EBO.cpp || cmake_object_order_depends_target_PingPongGame
+  DEFINES = -DGLAD_GL_IMPLEMENTATION
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17
+  INCLUDES = -ID:\Organizations\Molnar-Solutions\PingPongGame\library\Include\glad -ID:\Organizations\Molnar-Solutions\PingPongGame\library\Include\GLFW -ID:\Organizations\Molnar-Solutions\PingPongGame\library\Include\glm -ID:\Organizations\Molnar-Solutions\PingPongGame\library\Include\KHR -ID:\Organizations\Molnar-Solutions\PingPongGame\library\Include\stb -ID:\Organizations\Molnar-Solutions\PingPongGame\src
+  OBJECT_DIR = CMakeFiles\PingPongGame.dir
+  OBJECT_FILE_DIR = CMakeFiles\PingPongGame.dir\src\rendering
+  TARGET_COMPILE_PDB = CMakeFiles\PingPongGame.dir\
+  TARGET_PDB = D:\Organizations\Molnar-Solutions\PingPongGame\out\PingPongGame.pdb
+
+build CMakeFiles\PingPongGame.dir\src\rendering\Texture.cpp.obj: CXX_COMPILER__PingPongGame_unscanned_Debug D$:\Organizations\Molnar-Solutions\PingPongGame\src\rendering\Texture.cpp || cmake_object_order_depends_target_PingPongGame
+  DEFINES = -DGLAD_GL_IMPLEMENTATION
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17
+  INCLUDES = -ID:\Organizations\Molnar-Solutions\PingPongGame\library\Include\glad -ID:\Organizations\Molnar-Solutions\PingPongGame\library\Include\GLFW -ID:\Organizations\Molnar-Solutions\PingPongGame\library\Include\glm -ID:\Organizations\Molnar-Solutions\PingPongGame\library\Include\KHR -ID:\Organizations\Molnar-Solutions\PingPongGame\library\Include\stb -ID:\Organizations\Molnar-Solutions\PingPongGame\src
+  OBJECT_DIR = CMakeFiles\PingPongGame.dir
+  OBJECT_FILE_DIR = CMakeFiles\PingPongGame.dir\src\rendering
+  TARGET_COMPILE_PDB = CMakeFiles\PingPongGame.dir\
+  TARGET_PDB = D:\Organizations\Molnar-Solutions\PingPongGame\out\PingPongGame.pdb
+
+build CMakeFiles\PingPongGame.dir\src\rendering\VAO.cpp.obj: CXX_COMPILER__PingPongGame_unscanned_Debug D$:\Organizations\Molnar-Solutions\PingPongGame\src\rendering\VAO.cpp || cmake_object_order_depends_target_PingPongGame
+  DEFINES = -DGLAD_GL_IMPLEMENTATION
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17
+  INCLUDES = -ID:\Organizations\Molnar-Solutions\PingPongGame\library\Include\glad -ID:\Organizations\Molnar-Solutions\PingPongGame\library\Include\GLFW -ID:\Organizations\Molnar-Solutions\PingPongGame\library\Include\glm -ID:\Organizations\Molnar-Solutions\PingPongGame\library\Include\KHR -ID:\Organizations\Molnar-Solutions\PingPongGame\library\Include\stb -ID:\Organizations\Molnar-Solutions\PingPongGame\src
+  OBJECT_DIR = CMakeFiles\PingPongGame.dir
+  OBJECT_FILE_DIR = CMakeFiles\PingPongGame.dir\src\rendering
+  TARGET_COMPILE_PDB = CMakeFiles\PingPongGame.dir\
+  TARGET_PDB = D:\Organizations\Molnar-Solutions\PingPongGame\out\PingPongGame.pdb
+
+build CMakeFiles\PingPongGame.dir\src\rendering\VBO.cpp.obj: CXX_COMPILER__PingPongGame_unscanned_Debug D$:\Organizations\Molnar-Solutions\PingPongGame\src\rendering\VBO.cpp || cmake_object_order_depends_target_PingPongGame
+  DEFINES = -DGLAD_GL_IMPLEMENTATION
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17
+  INCLUDES = -ID:\Organizations\Molnar-Solutions\PingPongGame\library\Include\glad -ID:\Organizations\Molnar-Solutions\PingPongGame\library\Include\GLFW -ID:\Organizations\Molnar-Solutions\PingPongGame\library\Include\glm -ID:\Organizations\Molnar-Solutions\PingPongGame\library\Include\KHR -ID:\Organizations\Molnar-Solutions\PingPongGame\library\Include\stb -ID:\Organizations\Molnar-Solutions\PingPongGame\src
+  OBJECT_DIR = CMakeFiles\PingPongGame.dir
+  OBJECT_FILE_DIR = CMakeFiles\PingPongGame.dir\src\rendering
+  TARGET_COMPILE_PDB = CMakeFiles\PingPongGame.dir\
+  TARGET_PDB = D:\Organizations\Molnar-Solutions\PingPongGame\out\PingPongGame.pdb
+
+build CMakeFiles\PingPongGame.dir\src\shaders\Shader.cpp.obj: CXX_COMPILER__PingPongGame_unscanned_Debug D$:\Organizations\Molnar-Solutions\PingPongGame\src\shaders\Shader.cpp || cmake_object_order_depends_target_PingPongGame
+  DEFINES = -DGLAD_GL_IMPLEMENTATION
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17
+  INCLUDES = -ID:\Organizations\Molnar-Solutions\PingPongGame\library\Include\glad -ID:\Organizations\Molnar-Solutions\PingPongGame\library\Include\GLFW -ID:\Organizations\Molnar-Solutions\PingPongGame\library\Include\glm -ID:\Organizations\Molnar-Solutions\PingPongGame\library\Include\KHR -ID:\Organizations\Molnar-Solutions\PingPongGame\library\Include\stb -ID:\Organizations\Molnar-Solutions\PingPongGame\src
+  OBJECT_DIR = CMakeFiles\PingPongGame.dir
+  OBJECT_FILE_DIR = CMakeFiles\PingPongGame.dir\src\shaders
+  TARGET_COMPILE_PDB = CMakeFiles\PingPongGame.dir\
+  TARGET_PDB = D:\Organizations\Molnar-Solutions\PingPongGame\out\PingPongGame.pdb
+
+build CMakeFiles\PingPongGame.dir\src\utils\stb_image.cpp.obj: CXX_COMPILER__PingPongGame_unscanned_Debug D$:\Organizations\Molnar-Solutions\PingPongGame\src\utils\stb_image.cpp || cmake_object_order_depends_target_PingPongGame
+  DEFINES = -DGLAD_GL_IMPLEMENTATION
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17
+  INCLUDES = -ID:\Organizations\Molnar-Solutions\PingPongGame\library\Include\glad -ID:\Organizations\Molnar-Solutions\PingPongGame\library\Include\GLFW -ID:\Organizations\Molnar-Solutions\PingPongGame\library\Include\glm -ID:\Organizations\Molnar-Solutions\PingPongGame\library\Include\KHR -ID:\Organizations\Molnar-Solutions\PingPongGame\library\Include\stb -ID:\Organizations\Molnar-Solutions\PingPongGame\src
+  OBJECT_DIR = CMakeFiles\PingPongGame.dir
+  OBJECT_FILE_DIR = CMakeFiles\PingPongGame.dir\src\utils
+  TARGET_COMPILE_PDB = CMakeFiles\PingPongGame.dir\
+  TARGET_PDB = D:\Organizations\Molnar-Solutions\PingPongGame\out\PingPongGame.pdb
+
 build CMakeFiles\PingPongGame.dir\src\window\window.cpp.obj: CXX_COMPILER__PingPongGame_unscanned_Debug D$:\Organizations\Molnar-Solutions\PingPongGame\src\window\window.cpp || cmake_object_order_depends_target_PingPongGame
   DEFINES = -DGLAD_GL_IMPLEMENTATION
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17
@@ -93,7 +147,7 @@ build CMakeFiles\PingPongGame.dir\library\Include\glad\glad.c.obj: C_COMPILER__P
 #############################################
 # Link the executable D:\Organizations\Molnar-Solutions\PingPongGame\out\PingPongGame.exe
 
-build D$:\Organizations\Molnar-Solutions\PingPongGame\out\PingPongGame.exe: CXX_EXECUTABLE_LINKER__PingPongGame_Debug CMakeFiles\PingPongGame.dir\src\main.cpp.obj CMakeFiles\PingPongGame.dir\src\math\StandardMath.cpp.obj CMakeFiles\PingPongGame.dir\src\window\window.cpp.obj CMakeFiles\PingPongGame.dir\library\Include\glad\glad.c.obj | D$:\Organizations\Molnar-Solutions\PingPongGame\library\Lib\glfw3.lib
+build D$:\Organizations\Molnar-Solutions\PingPongGame\out\PingPongGame.exe: CXX_EXECUTABLE_LINKER__PingPongGame_Debug CMakeFiles\PingPongGame.dir\src\main.cpp.obj CMakeFiles\PingPongGame.dir\src\math\StandardMath.cpp.obj CMakeFiles\PingPongGame.dir\src\rendering\EBO.cpp.obj CMakeFiles\PingPongGame.dir\src\rendering\Texture.cpp.obj CMakeFiles\PingPongGame.dir\src\rendering\VAO.cpp.obj CMakeFiles\PingPongGame.dir\src\rendering\VBO.cpp.obj CMakeFiles\PingPongGame.dir\src\shaders\Shader.cpp.obj CMakeFiles\PingPongGame.dir\src\utils\stb_image.cpp.obj CMakeFiles\PingPongGame.dir\src\window\window.cpp.obj CMakeFiles\PingPongGame.dir\library\Include\glad\glad.c.obj | D$:\Organizations\Molnar-Solutions\PingPongGame\library\Lib\glfw3.lib
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
   LINK_LIBRARIES = D:\Organizations\Molnar-Solutions\PingPongGame\library\Lib\glfw3.lib  opengl32.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib

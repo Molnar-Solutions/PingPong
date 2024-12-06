@@ -7,6 +7,8 @@
 #include "glfw3.h"
 #include "stb_image.h"
 
+#include "rendering/Entity.h"
+
 class WindowManager
 {
 private:
@@ -66,6 +68,30 @@ public:
 
     void game()
     {
+        /* Define entities */
+        GLfloat vertices[] = {
+            // coords            /  colors           / texture
+            -0.5f, 0.0, 0.0f,   1.0f, 0.0f, 0.0f,   0.0f, 0.0f,
+            -0.5f, -0.5f, 0.0f,  0.0f, 0.0f, 1.0f,   1.0, 0.0f,
+            0.5f, -0.5f, 0.0f,   1.0f, 1.0f, 1.0f,   1.0f, 0.0f,
+            0.5f, 0.0f, 0.f,     0.0f, 1.0f, 0.0f,   1.0f, 0.1f
+        };
+
+        GLuint indices[] = {
+            0, 1, 2,
+            0, 2, 3
+        };
+
+        Entity3DPosition pos(0.0f, 0.0f, -.5f);
+        std::string texPath = "D:\Organizations\Molnar-Solutions\PingPongGame\src\assets\block.png";
+
+        Texture block(texPath.c_str(), GL_TEXTURE_2D, GL_TEXTURE0, GL_RGB, GL_UNSIGNED_BYTE);
+        block.texUnit(shaderProgram, "tex0", 0);
+
+        Entity rectangle(vertices, indices, pos, block);
+
+        /* Next time: finish the bottom rectangle, add a ball and the hitting targets! */
+
         // Main while loop
         while (!glfwWindowShouldClose(window))
         {
