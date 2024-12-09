@@ -1,6 +1,7 @@
 #ifndef WINDOW_CLASS_H
 #define WINDOW_CLASS_H
 
+#include <vector>
 #include <iostream>
 
 #include "glad.h"
@@ -8,6 +9,7 @@
 #include "stb_image.h"
 
 #include "rendering/Entity.h"
+#include "math/StandardMath.h"
 
 class WindowManager
 {
@@ -68,8 +70,15 @@ public:
 
     void game()
     {
+        /* Register my math class */
+        StandardMath math;
+
+        /* Register shaders */
+        Shader shaderProgram("D:\\Organizations\\Molnar-Solutions\\PingPongGame\\src\\shaders\\files\\default.vert",
+            "D:\\Organizations\\Molnar-Solutions\\PingPongGame\\src\\shaders\\files\\default.frag");
+
         /* Define entities */
-        GLfloat vertices[] = {
+        std::vector<GLfloat> vertices = {
             // coords            /  colors           / texture
             -0.5f, 0.0, 0.0f,   1.0f, 0.0f, 0.0f,   0.0f, 0.0f,
             -0.5f, -0.5f, 0.0f,  0.0f, 0.0f, 1.0f,   1.0, 0.0f,
@@ -77,20 +86,18 @@ public:
             0.5f, 0.0f, 0.f,     0.0f, 1.0f, 0.0f,   1.0f, 0.1f
         };
 
-        GLuint indices[] = {
+        std::vector<GLuint> indices = {
             0, 1, 2,
             0, 2, 3
         };
 
-        Entity3DPosition pos(0.0f, 0.0f, -.5f);
-        std::string texPath = "D:\Organizations\Molnar-Solutions\PingPongGame\src\assets\block.png";
+        std::string texPath = "D:\\Organizations\\Molnar-Solutions\\PingPongGame\\src\\assets\\block.png";
 
         Texture block(texPath.c_str(), GL_TEXTURE_2D, GL_TEXTURE0, GL_RGB, GL_UNSIGNED_BYTE);
         block.texUnit(shaderProgram, "tex0", 0);
 
-        Entity rectangle(vertices, indices, pos, block);
-
-        /* Next time: finish the bottom rectangle, add a ball and the hitting targets! */
+        Entity rectangle(vertices, indices, 8, block, Vector3f(0.0f, 0.0f, -0.5f),
+            Vector3f(0.0f, 0.0f, 0.0f), 1);
 
         // Main while loop
         while (!glfwWindowShouldClose(window))
@@ -100,6 +107,15 @@ public:
 
             // Clean the back buffer and assign the new color to it
             glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+
+            /* Rendering phrase */
+            shaderProgram.Activate();
+
+            block.Bind();
+            rectangle.getVAO().Bind();
+
+            /* Draw primitives, number of indices, datatype of indices, index of indices */
+            glDrawElements(GL_TRIANGLES, vertices.size() / indices.size(), GL_UNSIGNED_INT, 0);
 
             // Swap the back buffer with the front buffer
             glfwSwapBuffers(window);

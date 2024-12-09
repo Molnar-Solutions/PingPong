@@ -4,7 +4,7 @@ Texture::Texture(const char* image, GLenum texType, GLenum slot,
 	GLenum format, GLenum pixelType)
 {
 	// Assigns the type of the texture ot the texture object
-	type = texType;
+	this->type = texType;
 
 	// Stores the width, height, and the number of color channels of the image
 	int widthImg, heightImg, numColCh;

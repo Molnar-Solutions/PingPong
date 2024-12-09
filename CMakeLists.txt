@@ -4,12 +4,12 @@ cmake_minimum_required(VERSION 3.10)
 # Project name and version
 project(PingPongGame VERSION 1.0)
  
-# Set the C++ standard 
-set(CMAKE_CXX_STANDARD 17)   
-set(CMAKE_CXX_STANDARD_REQUIRED True)
+# Set the C++ standard        
+set(CMAKE_CXX_STANDARD 17)     
+set(CMAKE_CXX_STANDARD_REQUIRED True)     
  
 # Add include directories for third-party libraries  
-include_directories(
+include_directories( 
     ${CMAKE_SOURCE_DIR}/library/Include/glad        # Glad headers 
     ${CMAKE_SOURCE_DIR}/library/Include/GLFW        # GLFW headers
     ${CMAKE_SOURCE_DIR}/library/Include/glm         # glm headers
